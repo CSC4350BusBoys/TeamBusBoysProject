@@ -1,0 +1,215 @@
+   html, body{
+      padding: 0;
+      margin: 0;
+
+      height: 100%;
+      width: 100%;
+    }
+
+    #map{
+      height: 100%;
+      width: 100%;
+    }
+
+    #total-wrapper{
+      height: 100%;
+      width: 100%;
+
+      /*min-width: 770px;*/
+    }
+
+    #top-nav-bar{
+      background-color: #141A46;
+
+      width: 100%;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #title{
+      padding: 10px;
+
+      display: flex;
+      flex-direction: row;
+    }
+
+    #title img{
+      width: 50px;
+      height: 50px;
+    }
+
+    #title h1{
+      margin: 0px;
+
+      color: #FAD744;
+    }
+
+    #real-nav-bar{
+      height: 100%;
+
+      display: flex;
+      align-items: center;
+    }
+
+    #real-nav-bar nav{
+      display: flex;
+      flex-direction: row;
+    }
+
+    #real-nav-bar nav p{
+      margin: 0;
+      padding: 0px 15px;
+    }
+
+    .web-link{
+      color: #FAD744;
+      text-decoration: none;
+      transition: color .3s ease-in;
+    }
+
+    .web-link::after{
+      content: '';
+      display: block;
+      width: 0;
+      height: 1px;
+      background: #EF5455;
+      transition: width .3s;
+    }
+
+    .web-link:hover::after{
+      width: 100%;
+    }
+
+    .web-link:hover{
+      text-decoration: none;
+      color: #EF5455;
+    }
+
+    #sides-wrap{
+      height: 100%;
+      width: 100%;
+
+      display: flex;
+      flex-wrap: wrap;
+
+    }
+
+    #left-side-routes{
+      background-color: #161B21;
+      /*border: 1px solid #05c46b;*/
+
+      display: flex;
+      /*justify-content: center;*/
+      flex-direction: column;
+
+      width: 30%;
+      height: 100%;
+    }
+
+    #search-form{
+      width: 100%;
+      /*height: 10%;*/
+    }
+
+    #search-form form{
+      width: 100%;
+      height:50px;
+
+      display: flex;
+      flex-direction: row;
+
+      padding: 0;
+      margin: 0;
+
+      border: 1px solid #8BD8BD;
+    }
+
+    #query{
+      padding: 0;
+      margin: 0;
+
+      width: 75%;
+
+      border: none;
+
+      text-align: center;
+
+      background-color: #161B21;
+      color: #FAD744;
+    }
+
+    #send-query{
+      padding: 0;
+      margin: 0;
+
+      width: 25%;
+
+      border: none;
+    }
+
+    #search-results{
+      width: 100%;
+    }
+
+    #right-side-map{
+      background-color: #bdc3c7;
+
+      width: 70%;
+      height: 100%;
+    }
+
+    .idv-res{
+      width: 100%;
+      background-color: #243665;
+      /*height: 100px;*/
+
+      padding: 5px;
+      text-overflow: clip;
+    }
+
+    .idv-res h2{
+      font-size: 21px;
+
+      padding: 5px;
+
+      color: #8BD8BD;
+
+      border-bottom: 1px solid black;
+    }
+
+    .idv-res p{
+      color: #FAD744;
+    }
+
+
+    @media only screen and (max-width: 770px) {
+      #sides-wrap{
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      #left-side-routes{
+        background-color: #161B21;
+        /*border: 1px solid #05c46b;*/
+
+        display: flex;
+        /*justify-content: center;*/
+        flex-direction: column;
+
+        width: 100%;
+        height: 50%;
+      }
+
+      #right-side-map{
+        background-color: #bdc3c7;
+
+        width: 100%;
+        height: 50%;
+      }
+    }

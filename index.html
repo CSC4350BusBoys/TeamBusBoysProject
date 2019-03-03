@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head lang = "en" ng-app>
+    <title>BBTransit</title>
+    <meta charset="utf-8">
+    <meta name="description" content="A fast and reliable place to get all the details on your bus route!">
+    <meta name="keywords" content="transit, buses, trains, MARTA, atlanta, ATL, GSU, routes, commuting, travel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/icons/humanpictos.ico">
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- hosted jQuery lib -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+    <div id="total-wrapper">
+
+      <div id="top-nav-bar">
+        <div id="title">
+          <img src="./assets/png/station.png">
+          <h1>BBTransit</h1>
+        </div>
+
+        <div id="real-nav-bar">
+          <nav>
+            <p><a class="web-link" href="">ABOUT</a></p>
+            <p><a class="web-link" href="">LOGIN</a></p>
+          </nav>
+        </div>
+      </div>
+
+      <div id = "sides-wrap">
+        <div id="left-side-routes">
+          <div id="search-form">
+            <form id="route-search-form">
+              <input id="query" type="text" name="route" placeholder="Enter a Route Number" autocomplete="off">
+              <input id="send-query" type="submit" name="Submit"></button>
+            </form>
+          </div>
+          <div id="search-results">
+            <div class="idv-res">
+              <h2>ROUTE NUMBER</h2>
+              <p>
+                These div blocks can serve as representations of the individual routes corresponding to the value given from the user.
+              </p>
+              <p>
+                This section will be dynamically filled with these blocks, each giving a low down of what buses are on the target route, as well as some information about each bus that can also be shown when clicking on a marker.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="right-side-map">
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="mapBus.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoojb_00eo6M9kuc0FO6SzSdNdpXW9mjQ&callback=initMap"
+    async defer></script>
+  </body>
+</html>
+<!-- Google API Key: AIzaSyAoojb_00eo6M9kuc0FO6SzSdNdpXW9mjQ -->
