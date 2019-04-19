@@ -7,4 +7,4 @@ Forrest Lybarger-Application Implementation,
 Kareem Shehab- Application Implementation,
 Pavan Namani- Documentation, and Testing.
 
-For this project, we have used PHP, CSX, HTML, and JavaScript languages. We used MySQL Workbench, and Sublime Text IDEs. In addition to these IDEs, the team chose to use Amazon Web Services' EC2 Host to host, and display our web browser.
+For this project, we have used PHP, CSX, HTML, and JavaScript languages. We used MySQL Workbench, Atom, and Sublime Text IDEs. In addition to these IDEs, the team chose to use Amazon Web Services' EC2 Host to host, and display our web browser.
